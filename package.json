@@ -1,0 +1,25 @@
+{
+  "name": "light-jsonp",
+  "version": "1.0.0",
+  "description": "light weight jsonp implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyang14/light-jsonp.git"
+  },
+  "keywords": [
+    "Javascript",
+    "JSONP",
+    "Vanilla",
+    "Javascript"
+  ],
+  "author": "Weili Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyang14/light-jsonp/issues"
+  },
+  "homepage": "https://github.com/wyang14/light-jsonp#readme"
+}
