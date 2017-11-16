@@ -1,10 +1,10 @@
-LightJsonP = function(callback, callbackParamName) {
+LightJsonP = function(callback) {
   var self = this;
   self.callback = callback;
   this.expando = Math.random().toString().replace(/\D/g, "");
   this.nonce = new Date().getTime();
 
-  this.fetch = function(url) {
+  this.fetch = function(url, callbackParamName) {
     var jsonpCallback = "keanu" + this.expando + "_" + this.nonce;
     this.nonce = this.nonce + 1;
 
@@ -23,6 +23,6 @@ LightJsonP = function(callback, callbackParamName) {
     window[callbackName] = function(response) {
       callbackFunction(response);
       delete window[callbackName];
-    }
-  }
+    };
+  };
 };
